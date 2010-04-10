@@ -64,9 +64,9 @@ function twitter_crawl() {
             
             $crawler->fetchStrayRepliedToTweets();
             
-            $crawler->fetchUnloadedFollowerDetails();
+            //$crawler->fetchUnloadedFollowerDetails();
             
-            $crawler->fetchFriendTweetsAndFriends();
+            //$crawler->fetchFriendTweetsAndFriends();
             
             // TODO: Get direct messages
             // TODO: Gather favorites data
@@ -76,7 +76,7 @@ function twitter_crawl() {
                 $crawler->fetchSearchResults($i->network_username);
             }
             
-            $crawler->cleanUpFollows();
+            //$crawler->cleanUpFollows();
             
             // Save instance
             $id->save($crawler->instance, $crawler->owner_object->post_count, $logger, $api);

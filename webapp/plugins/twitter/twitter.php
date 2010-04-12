@@ -50,16 +50,16 @@ function twitter_crawl() {
             
             if (!$noauth) {
                 // Auth req'd, for calling user only
-                $crawler->fetchInstanceUserRetweetsByMe();
-                
-                // Auth req'd, for calling user only
                 $crawler->fetchInstanceUserMentions();
+
+                // Auth req'd, for calling user only
+                //$crawler->fetchInstanceUserRetweetsByMe();
                 
                 // Auth req'd, for calling user only
-                $crawler->fetchInstanceUserFriends();
+                //$crawler->fetchInstanceUserFriends();
                 
                 // Auth req'd, for calling user only
-                $crawler->fetchInstanceUserFollowers();
+                //$crawler->fetchInstanceUserFollowers();
             }
             
             $crawler->fetchStrayRepliedToTweets();

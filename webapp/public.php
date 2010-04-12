@@ -1,5 +1,4 @@
 <?php 
-session_start();
 (isset($_SESSION['user'])) ? $_u = $_SESSION['user'] : $_u = '';
 (isset($_SESSION['instance'])) ? $_i = $_SESSION['instance'] : $_i = '';
 
